@@ -138,7 +138,7 @@ img {
  /* Mobile view - 480px and down below */
   @media screen and (max-width: 480px) {
     .lessons .row, .steps .row, .why-us .row {
-        flex-direction: column;
+        flex-wrap: wrap;
     }
     .lessons .col, .steps .col, .why-us .col {
         width: 100%;
@@ -167,5 +167,34 @@ img {
  @media screen and (min-width: 768px) {
     .container {
         width: 80%;
+    }
+ }
+
+ /* Another solution, not viable due to class naming (there would be .rows becoming columns)
+
+   @media screen and (max-width: 480px) {
+    .lessons .row, .steps .row, .why-us .row {
+        flex-direction: column;
+    }
+    .lessons .col, .steps .col, .why-us .col {
+        width: 100%;
+    }
+    .lessons .col:last-child {
+        margin-top: 80px;
+    }
+    .steps .col {
+        margin-bottom: 3rem;
+    }
+    .why-us .col-right  {
+        margin-top: 3rem;
+    }
+
+    .why-us {
+        background-color: #222222;
+        padding-top: 3rem;
+        margin-bottom: 0rem;
+    }
+    .steps {
+        margin-bottom: 0rem;
     }
  }
