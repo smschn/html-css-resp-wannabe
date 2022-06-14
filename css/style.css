@@ -169,7 +169,7 @@ img {
     }
  }
 
- /* Another solution, not viable due to class naming (classes named .rows would become columns in display:flex): it's better to avoid confusion by using the solution above.
+ /* Another solution, not viable due to class naming (classes named .rows would become columns due to flex-direction): it's better to avoid confusion by using the solution above.
 
 @media screen and (max-width: 480px) {
     .lessons .row, .steps .row, .why-us .row {
