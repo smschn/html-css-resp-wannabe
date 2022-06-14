@@ -137,17 +137,28 @@ img {
 
  /* Mobile view - 480px and down below */
   @media screen and (max-width: 480px) {
-    .lessons .row, .steps .row {
+    .lessons .row, .steps .row, .why-us .row {
         flex-direction: column;
     }
-    .lessons .col {
+    .lessons .col, .steps .col, .why-us .col {
         width: 100%;
     }
     .lessons .col:last-child {
         margin-top: 80px;
     }
     .steps .col {
-        width: 100%;
         margin-bottom: 50px;
+    }
+    .why-us .col-right  {
+        margin-top: 50px;
+    }
+
+    .why-us {
+        background-color: #222222;
+        padding-top: 3rem;
+        margin-bottom: 0rem;
+    }
+    .steps {
+        margin-bottom: 0rem;
     }
  }
