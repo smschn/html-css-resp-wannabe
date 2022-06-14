@@ -137,7 +137,7 @@ img {
 
  /* Mobile view - 480px and down below */
   @media screen and (max-width: 480px) {
-    .lessons .row {
+    .lessons .row, .steps .row {
         flex-direction: column;
     }
     .lessons .col {
@@ -145,5 +145,9 @@ img {
     }
     .lessons .col:last-child {
         margin-top: 80px;
+    }
+    .steps .col {
+        width: 100%;
+        margin-bottom: 50px;
     }
  }
